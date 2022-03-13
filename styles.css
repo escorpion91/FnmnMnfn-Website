@@ -41,6 +41,7 @@ a:hover {
     overflow: auto;
     position: relative;
     top: 30px;
+    
 }
 
 
@@ -127,13 +128,14 @@ table {
 
 .music__popup{
     width: 33%;
-    height: 400px;
+    height: 200px;
     position:absolute;
     /* top: 167.5px; */
     top: 33%;
     text-align: center;
     display: none;
     font-size: 12px;
+    overflow: auto;
 
 }
 
@@ -147,6 +149,12 @@ table {
     
 }
 
+
+.closecontainer {
+    position: fixed;
+    top: 33%;
+    left: 35%;
+}
 
 .blog__popup {
     padding: 2em;
@@ -181,3 +189,12 @@ table {
     cursor: pointer;
     
 }
+
+
+.dl4class {
+    width: 5%;
+    position: absolute;
+    cursor: pointer;
+    left: 14%;
+}
+

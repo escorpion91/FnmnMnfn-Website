@@ -27,3 +27,17 @@ document.querySelector('.closecontact').addEventListener('click',function(){
 document.getElementById('blogid').addEventListener('click',function() {
     document.querySelector('.blog__popup').style.display = 'block';
 });
+
+
+
+//DL4LOOP
+var myLoop = document.getElementById("dl4loop");
+var icon = document.getElementById("dl4id");
+
+icon.onclick = function() {
+    if(myLoop.paused) {
+        myLoop.play(); 
+    } else {
+        myLoop.pause();
+    }
+}
