@@ -17,5 +17,4 @@ jobs:
           ref: master
           path: dist
       - name: Deploy with rsync
-        run: ls -la
-        # run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USER }}/web/${{ secrets.SSH_HOST }}/public_html
+        run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USER }}/web/${{ secrets.SSH_HOST }}/public_html
