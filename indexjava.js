@@ -1,6 +1,19 @@
 //POPUP MUSICA
+
+let musicAbierto = false;
+let contactoAbierto = false;
+let blogAbierto = false;
+let showsAbierto = false;
+
 document.getElementById('musicaid').addEventListener('click',function() {
-    document.querySelector('.music__popup').style.display = 'inline';
+    if (musicAbierto == false) {document.querySelector('.blog__popup').style.display = 'none';
+        document.querySelector('.contacto__popup').style.display = 'none';
+        document.querySelector('.music__popup').style.display = 'inline';
+        musicAbierto = true;
+    } else {
+        document.querySelector('.music__popup').style.display = 'none';
+        musicAbierto = false;
+    }
 });
 
 
@@ -10,9 +23,22 @@ document.querySelector('.close').addEventListener('click',function(){
 
 
 
+
+
+
+
 //POPUP CONTACTO
+
 document.getElementById('contactoid').addEventListener('click',function() {
-    document.querySelector('.contacto__popup').style.display = 'flex';
+    if (contactoAbierto == false) {document.querySelector('.blog__popup').style.display = 'none';
+        document.querySelector('.music__popup').style.display = 'none';
+        document.querySelector('.contacto__popup').style.display = 'flex';
+        contactoAbierto = true;
+        musicAbierto = false;
+    } else {
+        document.querySelector('.contacto__popup').style.display = 'none';
+        contactoAbierto = false;
+    }        
 });
 
 
@@ -23,9 +49,22 @@ document.querySelector('.closecontact').addEventListener('click',function(){
 
 
 
+
+
+
+
 //POPUP BLOG
 document.getElementById('blogid').addEventListener('click',function() {
-    document.querySelector('.blog__popup').style.display = 'block';
+    if (blogAbierto == false) {document.querySelector('.contacto__popup').style.display = 'none';
+        document.querySelector('.music__popup').style.display = 'none';
+        document.querySelector('.blog__popup').style.display = 'block';
+        blogAbierto = true;
+        musicAbierto = false;
+        contactoAbierto = false;
+    } else {
+        document.querySelector('.blog__popup').style.display = 'none';
+        blogAbierto = false;
+    }
 });
 
 
@@ -54,3 +93,7 @@ iconhp.onclick = function() {
     }
     
 }
+
+
+// document.getElementById(pbio).innerHTML = new HTML
+

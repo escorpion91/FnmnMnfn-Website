@@ -15,6 +15,13 @@ body {
     background-color: rgba(241, 241, 220, 0.774);
 }
 
+
+
+/* html, body {
+    min-width: 1010px;
+    } */
+
+
 a {
     color: #000;
     text-decoration: none;
@@ -49,6 +56,9 @@ a:hover {
     width: 50%;
     margin-left: 37.5%;
 }
+
+
+
 
 
 .foto__bio {
@@ -169,14 +179,16 @@ table {
     display: none;
 }
 
+
+
 .contacto__popup{
     width: 15%;
     height: 40px;
-    position:fixed;
+    position:absolute;
     text-align: center;
     display: none;
     font-size: 12px;
-    left: 655px;
+    left: 600px;
     bottom: 650px;
 }
 
@@ -205,10 +217,82 @@ table {
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1150px) {
     .text__logo {
-      /* background-color: lightblue; */
+      background-color: lightblue;
     }
+
+    .textbio {
+        font-size: 13px;
+        height: 50px;
+    }
+
+
+    .brujotext {
+        width: 50%;
+        margin-left: 37%;
+    }
+
+
+    .contacto__popup{
+        width: 15%;
+        height: 40px;
+        position:absolute;
+        text-align: center;
+        display: none;
+        font-size: 12px;
+        left: 450px;
+        bottom: 650px;
+        top: 525px;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .text__logo {
+      background-color: lightgreen;
+    }
+
+    .brujotext {
+        width: 50%;
+        margin-left: 35%;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1010px) {
+    .text__logo {
+      background-color: lightpink;
+    }
+
+    .brujotext {
+        width: 50%;
+        margin-left: 35%;
+    }
+
+    html, body {
+        min-width: 1010px;
+    }
+
+    .blog__popup {
+        padding: 2em;
+        font-size: 12px;
+        position: absolute;
+        width: 33%;
+        top: 23%;
+        height: 225px;
+        top: 500px;
+        right: 150px;
+        text-align: center;
+        overflow: auto;
+        display: none;
+    }
+    
 
 
 }
@@ -218,14 +302,40 @@ table {
 
 
 
-
-
 @media only screen and (max-width: 600px) {
     .text__logo {
-      background-color: lightblue;
+      /* background-color: lightblue; */
       display: none;
     }
 
+
+    .contacto__popup{
+        width: 15%;
+        height: 40px;
+        position:absolute;
+        text-align: center;
+        display: none;
+        font-size: 12px;
+        left: 160px;
+        bottom: 650px;
+        top: 525px;
+    }
+
+
+
+    .music__popup{
+        width: 33%;
+        height: 150px;
+        position:absolute;
+        /* top: 167.5px; */
+        top: 520px;
+        right:150px;
+        text-align: center;
+        display: none;
+        font-size: 12px;
+        overflow: auto;
+    
+    }
 
     .logox {
         width: 20%;
@@ -233,11 +343,15 @@ table {
         top:5px;
     }
 
+    html, body {
+        min-width: 10px;
+        }
+
 
 
 
     .contacto__popup {
-        background-color: lightblue;
+        /* background-color: lightblue; */
     }
 
 
@@ -279,6 +393,8 @@ table {
     .brujotext {
         width: 50%;
         margin-left: 25%;
+        font-size: 12px;;
+
     }
 
 
@@ -289,6 +405,20 @@ table {
         left: 4%;
     }
 
+    
+    .blog__popup {
+        padding: 2em;
+        font-size: 12px;
+        position: absolute;
+        width: 56%;
+        top: 23%;
+        height: 200px;
+        top: 520px;
+        right: 100px;
+        text-align: center;
+        overflow: auto;
+        display: none;
+    }
     
 
 
