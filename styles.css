@@ -207,7 +207,7 @@ table {
 
 @media only screen and (max-width: 1200px) {
     .text__logo {
-      background-color: lightblue;
+      /* background-color: lightblue; */
     }
 
 
