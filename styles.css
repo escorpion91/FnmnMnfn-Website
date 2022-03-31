@@ -172,7 +172,7 @@ table {
 .contacto__popup{
     width: 15%;
     height: 40px;
-    position:absolute;
+    position:fixed;
     text-align: center;
     display: none;
     font-size: 12px;
@@ -194,7 +194,7 @@ table {
 
 
 .dl4class {
-    width: 5%;
+    width: 10%;
     position: absolute;
     cursor: pointer;
     left: 14%;
@@ -203,3 +203,93 @@ table {
 #iconlogo {
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 1200px) {
+    .text__logo {
+      background-color: lightblue;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .text__logo {
+      background-color: lightblue;
+      display: none;
+    }
+
+
+    .logox {
+        width: 20%;
+        position:absolute;
+        top:5px;
+    }
+
+
+
+
+    .contacto__popup {
+        background-color: lightblue;
+    }
+
+
+
+    .navigation li {
+        display: inline-block;
+        padding: 0px 15px;
+    }
+
+    .biodiv {
+        width: 100%;
+        height: 500px;
+        overflow: none;
+        overflow-x: none;
+        text-align:center;
+    }
+
+
+    .foto__bio {
+
+        width: 65%;
+        border-radius: 4px;
+        position: relative;
+        background-color: rgba(241, 241, 220, 0.774);
+        left: 0;
+    }
+
+    .bio__container {
+        width: 100%;
+    }
+
+
+    .textbio {
+        font-size: 13px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .brujotext {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+
+    .dl4class {
+        width: 25%;
+        position: absolute;
+        cursor: pointer;
+        left: 4%;
+    }
+
+    
+
+
+  }
