@@ -31,7 +31,7 @@ document.getElementById('blogid').addEventListener('click',function() {
 
 
 //DL4LOOP
-var myLoop = document.getElementById("dl4loop");
+var myLoop = document.getElementById("harryPotter");
 var icon = document.getElementById("dl4id");
 
 icon.onclick = function() {
@@ -40,4 +40,17 @@ icon.onclick = function() {
     } else {
         myLoop.pause();
     }
+}
+
+
+var hp = document.getElementById("dl4loop");
+var iconhp = document.getElementById("iconlogo");
+
+iconhp.onclick = function() {
+    if(hp.paused) {
+        hp.play();
+    } else {
+        hp.pause();
+    }
+    
 }

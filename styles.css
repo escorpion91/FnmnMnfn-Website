@@ -200,3 +200,6 @@ table {
     left: 14%;
 }
 
+#iconlogo {
+    cursor: pointer;
+}
