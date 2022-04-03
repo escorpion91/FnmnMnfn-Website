@@ -95,5 +95,18 @@ iconhp.onclick = function() {
 }
 
 
+
+var  pablo = document.getElementById("pablovoicenote");
+var fenomeno = document.getElementById("fnmnmnfn");
+
+fenomeno.onclick = function() {
+    if(pablo.paused) {
+        pablo.play();
+    } else {
+        pablo.pause();
+    }
+    
+}
+
 // document.getElementById(pbio).innerHTML = new HTML
 

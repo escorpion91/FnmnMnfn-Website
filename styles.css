@@ -15,6 +15,12 @@ body {
     background-color: rgba(241, 241, 220, 0.774);
 }
 
+footer {
+    position: fixed;
+    padding: 0px 10px 0px 0px;
+    bottom: 0;
+}
+
 
 
 /* html, body {
@@ -68,6 +74,7 @@ a:hover {
     position: relative;
     left: 37.5%;
     background-color: rgba(241, 241, 220, 0.774);
+    cursor: pointer;
 
 }
 
@@ -125,7 +132,7 @@ table {
 
 .copyright {
     font-size: 12px;
-    position:absolute;
+    /* position:absolute; */
     bottom: 1px;
 }
 
@@ -134,6 +141,13 @@ table {
     padding-top: 40px;
     text-align: center;
     line-height: 1.6;
+}
+
+
+
+.cuencaclass {
+    width: 75%;
+    border-radius: 2px;
 }
 
 .music__popup{
@@ -177,6 +191,7 @@ table {
     text-align: center;
     overflow: auto;
     display: none;
+    justify-content: center;
 }
 
 
@@ -217,10 +232,25 @@ table {
 }
 
 
+
+.festivalitoclass {
+    width: 75%;
+    border-radius: 2px;
+    
+}
+
+
+
+
+.escorpion91class {
+    width: 65%;
+}
+
+
 @media only screen and (max-width: 1150px) {
-    .text__logo {
+    /* .text__logo {
       background-color: lightblue;
-    }
+    } */
 
     .textbio {
         font-size: 13px;
@@ -252,9 +282,9 @@ table {
 
 
 @media only screen and (max-width: 1100px) {
-    .text__logo {
+    /* .text__logo {
       background-color: lightgreen;
-    }
+    } */
 
     .brujotext {
         width: 50%;
@@ -266,9 +296,9 @@ table {
 
 
 @media only screen and (max-width: 1010px) {
-    .text__logo {
+    /* .text__logo {
       background-color: lightpink;
-    }
+    } */
 
     .brujotext {
         width: 50%;
@@ -350,9 +380,7 @@ table {
 
 
 
-    .contacto__popup {
-        /* background-color: lightblue; */
-    }
+
 
 
 
@@ -422,4 +450,125 @@ table {
     
 
 
-  }
+}
+
+@media only screen and (max-width: 375px) {
+    /* p {
+      background-color: red;
+    } */
+
+
+    .dl4classcontainer {
+        position: relative;
+        bottom: 40px;
+    }
+
+
+    .navigation li {
+        display: inline-block;
+        padding: 0px 5px;
+    }
+
+
+    .navlinks {
+        justify-content: right;
+        font-size: 13px;
+    }
+
+
+    .navigation {
+        position: absolute;
+        left: 16%;
+    }
+
+    .music__popup{
+        width: 33%;
+        height: 150px;
+        position:absolute;
+        /* top: 167.5px; */
+        top: 420px;
+        right:125px;
+        text-align: center;
+        display: none;
+        font-size: 10px;
+        overflow: auto;
+    
+    }
+
+
+    .texto-tienda{
+        line-height: 15px;
+    }
+
+
+
+    .blog__popup {
+        padding: 2em;
+        font-size: 12px;
+        position: absolute;
+        width: 56%;
+        top: 23%;
+        height: 200px;
+        top: 420px;
+        right: 81px;
+        text-align: center;
+        overflow: auto;
+        display: none;
+    }
+
+
+
+    .contacto__popup{
+        width: 15%;
+        height: 40px;
+        position:absolute;
+        text-align: center;
+        display: none;
+        font-size: 10px;
+        left: 115px;
+        bottom: 650px;
+        top: 455px;
+    }
+
+
+
+}
+
+
+
+/* iPhone Xr 414 */
+@media only screen and (max-width: 414px) and (min-width: 376px) {
+  
+
+    .navigation li {
+        display: inline-block;
+        padding: 0px 5px;
+    }
+
+
+    .navlinks {
+        justify-content: right;
+        font-size: 13px;
+    }
+
+    .navigation {
+        position: absolute;
+        left: 19%;
+    }
+
+    .blog__popup {
+        left: 95px;
+    }
+
+    .music__popup{
+        right:136px;
+
+    }
+
+    .contacto__popup{
+        left: 120px;
+    }
+
+
+
+}
